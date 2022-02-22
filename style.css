@@ -1,0 +1,175 @@
+@font-face {
+   font-family: "GeometosNeue";
+   src: url("GeometosNeueBlack.woff") format("woff");
+   font-weight: 900;
+   font-style: normal;
+}
+
+html,
+body {
+   background-color: #212121;
+   font-family: GeometosNeue;
+   width: 99%;
+   height: 99%;
+}
+
+p {
+   font-size: medium;
+   color: black;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.child {
+   background-color: #04aa6d;
+   border-radius: 28px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   transition: all 0.2s ease-in-out;
+}
+
+.child:hover {
+   cursor: pointer;
+}
+
+button {
+   background-color: #04aa6d;
+   font-family: GeometosNeue;
+   font-size: medium;
+   border: none;
+   text-align: center;
+   width: 65%;
+   user-select: none;
+   transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+   cursor: pointer;
+   transform: scale(1.1);
+}
+
+.parent {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   grid-template-rows: repeat(3, 1fr);
+   grid-column-gap: 8px;
+   grid-row-gap: 8px;
+
+   height: 100%;
+   width: 100%;
+}
+
+.div1 {
+   grid-area: 1 / 1 / 2 / 2;
+}
+.div2 {
+   grid-area: 1 / 2 / 2 / 3;
+}
+.div3 {
+   grid-area: 1 / 3 / 2 / 4;
+}
+.div4 {
+   grid-area: 1 / 4 / 2 / 5;
+}
+.div5 {
+   grid-area: 2 / 1 / 3 / 2;
+}
+.div6 {
+   grid-area: 2 / 2 / 3 / 3;
+}
+.div7 {
+   grid-area: 2 / 3 / 3 / 4;
+}
+.div8 {
+   grid-area: 2 / 4 / 3 / 5;
+}
+.div9 {
+   grid-area: 3 / 1 / 4 / 2;
+}
+.div10 {
+   grid-area: 3 / 2 / 4 / 3;
+}
+.div11 {
+   grid-area: 3 / 3 / 4 / 4;
+}
+.div12 {
+   grid-area: 3 / 4 / 4 / 5;
+}
+
+.parent2 {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: repeat(2, 1fr);
+   grid-column-gap: 3px;
+   grid-row-gap: 3px;
+}
+
+.div1-2 {
+   grid-area: 1 / 1 / 2 / 2;
+   bottom: 0;
+   right: 0;
+}
+.div2-2 {
+   grid-area: 1 / 2 / 2 / 3;
+}
+.div3-2 {
+   grid-area: 1 / 3 / 2 / 4;
+}
+.div4-2 {
+   grid-area: 2 / 1 / 3 / 2;
+}
+.div5-2 {
+   grid-area: 2 / 2 / 3 / 3;
+}
+.div6-2 {
+   grid-area: 2 / 3 / 3 / 4;
+}
+
+.modal {
+   display: none; /* Hidden by default */
+   position: fixed; /* Stay in place */
+   z-index: 1; /* Sit on top */
+   padding-top: 100px; /* Location of the box */
+   left: 0;
+   top: 0;
+   width: 100%; /* Full width */
+   height: 100%; /* Full height */
+   overflow: auto; /* Enable scroll if needed */
+   background-color: rgb(0, 0, 0); /* Fallback color */
+   background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+   text-align: center;
+}
+
+#modal12 {
+   padding-top: 20px;
+}
+
+#imagecollection {
+   width: 850px;
+   display: table;
+   margin: 0 auto;
+}
+
+.modal-content {
+   background-color: #e4dede;
+   margin: auto;
+   padding: 20px;
+   border: 1px solid #888;
+   width: 50%;
+   border-radius: 28px;
+}
+
+.close {
+   color: #aaaaaa;
+   float: right;
+   font-size: 28px;
+   font-weight: bold;
+   user-select: none;
+}
+
+.close:hover,
+.close:focus {
+   color: #000;
+   text-decoration: none;
+   cursor: pointer;
+}
